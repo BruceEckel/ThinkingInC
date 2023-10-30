@@ -1,0 +1,116 @@
+/* Global Styles */
+body {
+    background-image: url('Backgnd.gif');
+    background-color: #FFFFFF;
+    font-family: "Verdana", "Tahoma", "Arial", "Helvetica", sans-serif;
+}
+
+blockquote {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Title Styles */
+h1 {
+    font-family: "Verdana", "Tahoma", "Arial", "Helvetica", sans-serif;
+}
+
+h1>font:first-child {
+    font-size: x-large;
+}
+
+h1>font:nth-child(2) {
+    font-size: xx-large;
+}
+
+h1>font:nth-child(3),
+h1>a>font {
+    font-size: large;
+}
+
+/* Note styles */
+p>font:first-child {
+    font-size: small;
+    font-weight: bold;
+}
+
+p>a>font,
+p>font:not(:first-child) {
+    font-size: small;
+}
+
+/* Table of Contents styles */
+table>tr>td:nth-child(2)>table>tr>td>font {
+    font-size: 48px;
+}
+
+table>tr>td:nth-child(2)>table>tr>td>a>font,
+table>tr>td:nth-child(2)>table>tr>td>font[size="3"] {
+    font-size: larger;
+    font-weight: bold;
+}
+
+/* Chapter styles */
+table>tr>td:nth-child(2)>table>tr>td:nth-child(odd)>font:first-child {
+    font-size: xx-large;
+}
+
+table>tr>td:nth-child(2)>table>tr>td:nth-child(odd)>font:nth-child(2) {
+    font-size: small;
+}
+
+table>tr>td:nth-child(2)>table>tr>td:nth-child(odd)>a>font {
+    font-size: x-large;
+}
+
+/* Separator */
+hr {
+    width: 500px;
+    height: 8px;
+    background-color: black;
+    border: 0;
+    margin: 0;
+    align: left;
+}
+
+/* Sub-section styling, assuming it's similar for all sections */
+td>a[name^="Chapter"]+font {
+    font-size: xx-large;
+    display: block;
+    margin-bottom: 10px;
+}
+
+td>a[name^="Chapter"]+font+font {
+    font-size: small;
+    display: block;
+    margin-bottom: 20px;
+}
+
+td>a[name^="Chapter"]+font+font+a>font {
+    font-size: x-large;
+    display: block;
+    margin-bottom: 10px;
+}
+
+td>a[name^="Chapter"]+font+font+a+a>font {
+    font-size: x-large;
+    display: block;
+    margin-bottom: 20px;
+}
