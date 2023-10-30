@@ -2,52 +2,42 @@ from bs4 import BeautifulSoup
 from pathlib import Path
 
 
-def read_html(file_path):
-    return file_path.read_text(encoding="utf-8")
-
-
-def write_html(file_path, content):
-    file_path.write_text(content, encoding="utf-8")
-
-
 def convert_table_to_div(input_html):
-    soup = BeautifulSoup(input_html, "lxml")
-    table = soup.find("table")
+    soup = BeautifulSoup(input_html, "html.parser")
+    tables = soup.find_all("table")
+    for table in tables:
+        chapter_tag = table.find(id=lambda x: x and x.startswith("Chapter"))
 
-    if table:
-        chapter_header = soup.new_tag("div", **{"class": "chapter-header"})
+        # If there is no chapter tag, skip this table
+        if chapter_tag is None:
+            continue
 
-        chapter_header.append(soup.new_tag("hr", **{"class": "hr-left"}))
+        chapter_title = chapter_tag.text.strip()
 
-        chapter_name = table.find("font", {"class": "chapter-duration"}).text.strip()
-        chapter_header.append(soup.new_tag("h2", id="Chapter1", string=chapter_name))
+        # Create new div
+        new_div = soup.new_tag("div")
+        new_div["class"] = "chapter-container"
 
-        duration = table.find_all("font", size="2")[0].text.strip()
-        chapter_header.append(
-            soup.new_tag("p", string=duration, **{"class": "chapter-duration"})
-        )
+        # Extract content from table and place into div
+        for row in table.find_all("tr"):
+            for cell in row.find_all(["td", "th"]):
+                new_div.append(cell)
 
-        lecture_link_tag = table.find("a", {"class": "lecture-link"})
-        lecture_links = soup.new_tag("div", **{"class": "lecture-links"})
-        lecture_links.append(lecture_link_tag)
-        chapter_header.append(lecture_links)
+        # Replace the table with the new div
+        table.replace_with(new_div)
 
-        toc_link_tag = table.find_all("a", href="#TOC")[0]
-        chapter_header.append(
-            soup.new_tag(
-                "a", string=toc_link_tag.text, href="#TOC", **{"class": "back-to-toc"}
-            )
-        )
-
-        table.replace_with(chapter_header)
-
+    # Return the updated HTML content
     return str(soup)
 
 
-if __name__ == "__main__":
-    input_file_path = Path("index.html")
-    output_file_path = Path("cleaned.html")
+# Read the HTML file using pathlib
+input_file_path = Path("tables.html")
+output_file_path = Path("tables_cleaned.html")
 
-    input_html = read_html(input_file_path)
-    converted_html = convert_table_to_div(input_html)
-    write_html(output_file_path, converted_html)
+input_html = input_file_path.read_text()
+
+# Convert the tables to divs
+converted_html = convert_table_to_div(input_html)
+
+# Write the converted HTML back to a file
+output_file_path.write_text(converted_html)

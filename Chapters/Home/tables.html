@@ -3,279 +3,387 @@
 
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <title>Thinking in C Table of Contents, ©2002 MindView, Inc.</title>
-    <style>
-        body {
-            margin-left: 150px;
-            background-image: url('Backgnd.gif');
-            background-color: #FFFFFF;
-            font-family: Verdana, Tahoma, Arial, Helvetica;
-        }
-
-        .content {
-            margin: 2em;
-        }
-
-        .title-main {
-            font-size: 2.5em;
-        }
-
-        .subtitle {
-            font-size: 1.50em;
-            font-weight: bold;
-        }
-
-        .web-link,
-        .note {
-            font-size: 1em;
-            font-weight: bold;
-        }
-
-        h2.table-title {
-            font-size: 1.5em;
-        }
-
-        ul.table-of-contents {
-            padding-left: 40px;
-        }
-
-        ul.table-of-contents li {
-            /* font-size: 1.0em; */
-            font-weight: bold;
-            margin-bottom: 0.5em;
-            list-style-type: none;
-        }
-
-        .chapter-container {
-            width: 500px;
-            margin-left: 50px;
-        }
-
-        .hr-left {
-            align-self: flex-start;
-            width: 100%;
-            border: 0;
-            height: 8px;
-            background-color: gray;
-        }
-
-        .chapter-header h2 {
-            font-size: 1.5em;
-            font-family: Verdana, Tahoma, Arial, Helvetica;
-        }
-
-        .chapter-duration {
-            font-size: 0.8em;
-            font-family: Verdana, Tahoma, Arial, Helvetica;
-        }
-
-        .lecture-links .lecture-link {
-            font-size: 1em;
-            font-weight: bold;
-            font-family: Verdana, Tahoma, Arial, Helvetica;
-        }
-
-        .code-link {
-            font-size: 0.9em;
-            font-family: Verdana, Tahoma, Arial, Helvetica;
-        }
-
-        .code-links {
-            margin-top: -1em;
-            font-size: 0.8em;
-            display: block;
-            margin-bottom: 1em;
-        }
-
-        .back-to-toc {
-            font-size: 0.9em;
-            font-family: Verdana, Tahoma, Arial, Helvetica;
-        }
-
-        .chapter-description p {
-            font-size: 1.0em;
-            font-family: Verdana, Tahoma, Arial, Helvetica;
-        }
-
-        .thin-hr {
-            height: 1px;
-        }
-    </style>
 </head>
 
 <body background="Backgnd.gif" bgcolor="#FFFFFF">
-    <div class="content">
-        <h1 class="title-main">Thinking in C</h1>
-        <p class="subtitle">Foundations for Java and C++ <br />by Chuck Allison</p>
-        <p class="web-link">© 2002 MindView, Inc. <a href="http://www.MindView.net">http://www.MindView.net</a></p>
-        <p class="note"><strong>Note</strong>: Please click <a href="Install.htm">here</a> if you haven't performed the
-            installation. Please read the <a href="license.htm">license agreement</a>.</p>
-        <h2 class="table-title">Table of Contents</h2>
-        <ul class="table-of-contents">
-            <li><a href="#Chapter1">Chapter 1: Introduction and Getting Started</a></li>
-            <li><a href="#Chapter1Exercises">Chapter 1 Exercises</a></li>
-            <li><a href="#Chapter2">Chapter 2: Fundamental Data Types</a></li>
-            <li><a href="#Chapter2Exercises">Chapter 2 Exercises</a></li>
-            <li><a href="#Chapter3">Chapter 3: Operators</a></li>
-            <li><a href="#Chapter3Exercises">Chapter 3 Exercises</a></li>
-            <li><a href="#Chapter4">Chapter 4: Controlling Program Flow</a></li>
-            <li><a href="#Chapter4Exercises">Chapter 4 Exercises</a></li>
-            <li><a href="#Chapter5">Chapter 5: Compound Data Types</a></li>
-            <li><a href="#Chapter5Exercises">Chapter 5 Exercises</a></li>
-            <li><a href="#Chapter6">Chapter 6: Programming with Functions</a></li>
-            <li><a href="#Chapter6Exercises">Chapter 6 Exercises</a></li>
-            <li><a href="#Chapter7">Chapter 7: Pointers 101</a></li>
-            <li><a href="#Chapter7Exercises">Chapter 7 Exercises</a></li>
-            <li><a href="#Chapter8a">Chapter 8a: A first look at Java (if you're going on to Java)</a></li>
-            <li><a href="#Chapter8aExercises">Chapter 8a Exercises</a></li>
-            <li><a href="#Chapter8b">Chapter 8b: Pointers 102 (if you're going on to C++)</a></li>
-            <li><a href="#Chapter8bExercises">Chapter 8b Exercises</a></li>
-            <li><a>(There is no "Chapter 9a", since it is not necessary for Java)</a></li>
-            <li><a href="#Chapter9b">Chapter 9b: A first look at C++</a></li>
-            <li><a href="#Chapter9bExercises">Chapter 9b Exercises</a></li>
-            <li><a href="#MovingOn">Where to go next ...</a></li>
-            <li><a href="#SourceCode">Source code for examples, exercises and solutions</a></li>
-            <li><a href="#BookResources">Book Resources</a></li>
-            <li><a href="#Compilers">Compilers</a></li>
-            <li><a href="#TechnicalSupport">Troubleshooting</a></li>
-        </ul>
-    </div>
-    <div class="chapter-container">
-        <div class="chapter-header">
-            <hr class="hr-left">
-            <h2 id="Chapter1">
-                Chapter 1: Introduction and Getting Started
-            </h2>
-            <p class="chapter-duration">40 Minutes and 16 seconds</p>
-            <div class="lecture-links">
-                <a class="lecture-link" href="lectures/Chap1.htm">Start Lecture</a>
-            </div>
-            <a class="back-to-toc" href="#TOC">Back to Table of Contents</a>
-        </div>
-        <div class="chapter-description">
-            <p>
-                This chapter gives the context for the course (including the level of programming that you should
-                already have) and clarifies course objectives (that is, to find the shortest, most effective path to
-                Java and C++). We take a first look at C programming by examining statements, comments, include files,
-                and standard Input/Output (I/O).
-            </p>
-        </div>
-        <hr class="hr-left thin-hr">
-        <div class="chapter-exercises">
-            <h3>Chapter 1 Exercises</h3>
-            <p>Compile and execute two sample programs. (A full description is given at the end of the Chapter 1
-                lecture.)</p>
-            <p>Here are the source-code files for the exercises (use these as a starting point for
-                solving the exercises):</p>
-            <div class="code-links">
-                <a class="code-link" href="code/Chap1/first.htm">first.c</a>
-                <a class="code-link" href="code/Chap1/avg.htm">avg.c</a>
-                <a class="code-link" href="SourceCode">avg.c</a>
-                <a class="code-link" href="#SourceCode">Other options for source code</a>
-            </div>
-            <div class="lecture-links">
-                <a class="lecture-link" href="lectures/Soln1.htm">Start Lecture</a>
-            </div>
-            <p>Here are the source-code files for the exercise solutions:</p>
-            <div class="code-links">
-                <a class="code-link" href="code/Soln1/avg.htm"> avg.out </a>
-            </div>
-            <a class="back-to-toc" href="#TOC">Back to Table of Contents</a>
-        </div>
-    </div>
-    <div class="chapter-container">
-        <div class="chapter-header">
-            <hr class="hr-left" />
-            <h2 id="Chapter2">
-                Chapter 2: Fundamental Data Types
-            </h2>
-            <p class="chapter-duration">40 Minutes and 25 seconds</p>
-            <div class="lecture-links">
-                <a class="lecture-link" href="lectures/Chap2.htm">Start Lecture</a>
-            </div>
-            <a class="back-to-toc" href="#TOC">Back to Table of Contents</a>
-        </div>
-        <div class="chapter-description">
-            <p>
-                Like most languages, C has two flavors of numeric data types: integers and real
-                numbers. Unlike many languages, they come in an array of different sizes. This
-                chapter explores the limits and behavior of C's built-in types and explains
-                converting from one type to another both implicitly and explicitly (i.e., with
-                <i>casting</i>).
-            </p>
-        </div>
-        <hr class="hr-left thin-hr">
-        <div class="chapter-exercises">
-            <h3>Chapter 2 Exercises</h3>
-            <p> In this exercise you will learn to round to the nearest integer. (A full description is
-                given at the end of the Chapter 2 lecture.) </p>
-            <div class="code-links">
-                <a class="code-link" href="code/Chap2/float.htm">float.c</a>
-                <a class="code-link" href="code/Chap2/limits.htm">limits.c</a>
-                <a class="code-link" href="code/Chap2/missing.htm">missing.c</a>
-                <a class="code-link" href="#SourceCode">Other options for source code</a>
-            </div>
-            <div class="lecture-links">
-                <a class="lecture-link" href="lectures/Soln2.htm">Start Lecture</a>
-            </div>
-            <p>Here are the source-code files for the exercise solutions:</p>
-            <div class="code-links">
-                <a class="code-link" href="code/Soln2/lab2.htm">lab2.c</a>
-            </div>
-        </div>
-        <div class="back-to-toc">
-            <a href="#TOC">Back to Table of Contents</a>
-        </div>
-    </div>
-    <div class="chapter-container">
-        <div class="chapter-header">
-            <hr class="hr-left" />
-            <h2 id="Chapter3">
-                Chapter 3: Operators
-            </h2>
-            <p class="chapter-duration">21 Minutes and 22 seconds</p>
-            <div class="lecture-links">
-                <a class="lecture-link" href="lectures/Chap3.htm">Start Lecture</a>
-            </div>
-            <a class="back-to-toc" href="#TOC">Back to Table of Contents</a>
-        </div>
-        <div class="chapter-description">
-            <p>
-                C has more operators than most languages. Most of these operators are binary
-                operators, some are unary, and there's even a ternary operator (a what? :-).
-                Since C is ­- among other things -- a systems language, there are
-                operators that access features close to the machine. In this chapter we cover
-                all but five operators (those five are covered in later chapters). You'll also
-                see the way operators work together.
-            </p>
-        </div>
-        <hr class="hr-left thin-hr">
-        <div class="chapter-exercises">
-            <h3>Chapter 3 Exercises</h3>
-            <p>
-                In this exercise you'll learn to test the parity (i.e., even-ness/odd-ness) of input
-                numbers. (A full description is given at the end of the Chapter 3 lecture.)
-            </p>
-            <p>Here are the source-code files for the exercises (use these as a starting point for solving the
-                exercises):</p>
-            <div class="code-links">
-                <a class="code-link" href="code/Chap3/bitwise.htm">bitwise.c</a>
-                <a class="code-link" href="#SourceCode">Other options for source code</a>
-            </div>
-            <div class="lecture-links">
-                <a class="lecture-link" href="lectures/Soln3.htm">Start Lecture</a>
-            </div>
-            <p>Here are the source-code files for the exercise solutions:</p>
-            <div class="code-links">
-                <a class="code-link" href="code/Soln3/lab3.htm">lab3.c</a>
-            </div>
-        </div>
-        <div class="back-to-toc">
-            <a href="#TOC">Back to Table of Contents</a>
-        </div>
-    </div>
-
-    <table>
+    <table border="0">
+        <tr>
+            <td width="175">
+            </td>
+            <td width="500">
+                <hr align="left" noshade="NOSHADE" size="8" />
+                <p id="Chapter1">
+                    <a name="Chapter1">
+                    </a>
+                    <font class="chapter-duration" face="Verdana,Tahoma,Arial,Helvetica" size="5">
+                        Chapter 1: Introduction and Getting
+                        Started
+                        <br />
+                    </font>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                        40
+                        Minutes and 16 seconds
+                        <br />
+                    </font>
+                    <a class="lecture-link" href="lectures/Chap1.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="4">
+                            Start
+                            Lecture
+                        </font>
+                    </a>
+                    <br />
+                    <a class="lecture-link" href="#TOC">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                            Back to Table of
+                            Contents
+                        </font>
+                    </a>
+                </p>
+                <p class="chapter-description">
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        This chapter gives the context for the course (including the level of programming
+                        that you should already have) and clarifies course objectives (that is, to find
+                        the shortest, most effective path to Java and C++). We take a first look at C
+                        programming by examining statements, comments, include files, and standard
+                        Input/Output (I/O).
+                    </font>
+                </p>
+                <hr align="left" noshade="NOSHADE" size="1" />
+                <p align="center">
+                    <a name="Chapter1Exercises">
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
+                        Chapter 1
+                        Exercises
+                    </font>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        Compile
+                        and execute two sample programs. (A full description is given at the end of the
+                        Chapter 1 lecture.)
+                    </font>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        Here are
+                        the source-code files for the exercises (use these as a starting point for
+                        solving the exercises):
+                    </font>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                        <br />
+                    </font>
+                    <a href="code/Chap1/first.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            first.c
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap1/avg.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            avg.c
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="#SourceCode">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            Other options for source
+                            code
+                        </font>
+                    </a>
+                </p>
+                <p>
+                    <a href="lectures/Soln1.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="4">
+                            Start
+                            Lecture
+                        </font>
+                    </a>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        Here are
+                        the source-code files for the exercise solutions:
+                    </font>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                        <br />
+                    </font>
+                    <a href="code/Soln1/avg.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            avg.out
+                        </font>
+                    </a>
+                </p>
+                <p>
+                    <a href="#TOC">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                            Back to Table of
+                            Contents
+                        </font>
+                    </a>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <table border="0">
+        <tr>
+            <td width="175">
+            </td>
+            <td width="500">
+                <hr align="left" noshade="NOSHADE" size="8" />
+                <p>
+                    <a name="Chapter2">
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
+                        Chapter 2: Fundamental Data
+                        Types
+                        <br />
+                    </font>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                        40
+                        Minutes and 25 seconds
+                        <br />
+                    </font>
+                    <a href="lectures/Chap2.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="4">
+                            Start
+                            Lecture
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        <br />
+                    </font>
+                    <a href="#TOC">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                            Back to Table of
+                            Contents
+                        </font>
+                    </a>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        Like
+                        most languages, C has two flavors of numeric data types: integers and real
+                        numbers. Unlike many languages, they come in an array of different sizes. This
+                        chapter explores the limits and behavior of C's built-in types and explains
+                        converting from one type to another both implicitly and explicitly (i.e., with
+                        <i>
+                            casting
+                        </i>
+                        ).
+                    </font>
+                </p>
+                <hr align="left" noshade="NOSHADE" size="1" />
+                <p align="center">
+                    <a name="Chapter2Exercises">
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
+                        Chapter 2
+                        Exercises
+                    </font>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        In this
+                        exercise you will learn to round to the nearest integer. (A full description is
+                        given at the end of the Chapter 2 lecture.)
+                    </font>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        Here are
+                        the source-code files for the exercises (use these as a starting point for
+                        solving the exercises):
+                    </font>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                        <br />
+                    </font>
+                    <a href="code/Chap2/float.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            float.c
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap2/limits.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            limits.c
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap2/missing.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            missing.c
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="#SourceCode">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            Other options for source
+                            code
+                        </font>
+                    </a>
+                </p>
+                <p>
+                    <a href="lectures/Soln2.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="4">
+                            Start
+                            Lecture
+                        </font>
+                    </a>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        Here are
+                        the source-code files for the exercise solutions:
+                    </font>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                        <br />
+                    </font>
+                    <a href="code/Soln2/lab2.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            lab2.c
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                </p>
+                <p>
+                    <a href="#TOC">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                            Back to Table of
+                            Contents
+                        </font>
+                    </a>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <table border="0">
+        <tr>
+            <td width="175">
+            </td>
+            <td width="500">
+                <hr align="left" noshade="NOSHADE" size="8" />
+                <p>
+                    <a name="Chapter3">
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
+                        Chapter 3: Operators
+                    </font>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                        <br />
+                        21 Minutes and 22
+                        seconds
+                        <br />
+                    </font>
+                    <a href="lectures/Chap3.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="4">
+                            Start
+                            Lecture
+                        </font>
+                    </a>
+                    <br />
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                    </font>
+                    <a href="#TOC">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                            Back to
+                            Table of Contents
+                        </font>
+                    </a>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        C has
+                        more operators than most languages. Most of these operators are binary
+                        operators, some are unary, and there's even a ternary operator (a what? :-).
+                        Since C is ­- among other things -- a systems language, there are
+                        operators that access features close to the machine. In this chapter we cover
+                        all but five operators (those five are covered in later chapters). You'll also
+                        see the way operators work together.
+                    </font>
+                </p>
+                <hr align="left" noshade="NOSHADE" size="1" />
+                <p align="center">
+                    <a name="Chapter3Exercises">
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
+                        Chapter 3
+                        Exercises
+                    </font>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        In this
+                        exercise you'll learn to test the parity (i.e., even-ness/odd-ness) of input
+                        numbers. (A full description is given at the end of the Chapter 3
+                        lecture.)
+                    </font>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        Here are
+                        the source-code files for the exercises (use these as a starting point for
+                        solving the exercises):
+                    </font>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                        <br />
+                    </font>
+                    <a href="code/Chap3/bitwise.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            bitwise.c
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="#SourceCode">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            Other options for source
+                            code
+                        </font>
+                    </a>
+                </p>
+                <p>
+                    <a href="lectures/Soln3.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="4">
+                            Start
+                            Lecture
+                        </font>
+                    </a>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        Here are
+                        the source-code files for the exercise solutions:
+                    </font>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                        <br />
+                    </font>
+                    <a href="code/Soln3/lab3.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            lab3.c
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                </p>
+                <p>
+                    <a href="#TOC">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                            Back to Table of
+                            Contents
+                        </font>
+                    </a>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <table border="0">
         <tr>
             <td width="175">
             </td>
@@ -433,6 +541,8 @@
                 </p>
             </td>
         </tr>
+    </table>
+    <table border="0">
         <tr>
             <td width="175">
             </td>
@@ -589,6 +699,8 @@
                 </p>
             </td>
         </tr>
+    </table>
+    <table border="0">
         <tr>
             <td width="175">
             </td>
@@ -797,6 +909,8 @@
                 </p>
             </td>
         </tr>
+    </table>
+    <table border="0">
         <tr>
             <td width="175">
             </td>
@@ -969,6 +1083,8 @@
                 </p>
             </td>
         </tr>
+    </table>
+    <table border="0">
         <tr>
             <td width="175">
             </td>
@@ -1132,6 +1248,8 @@
                 </p>
             </td>
         </tr>
+    </table>
+    <table border="0">
         <tr>
             <td width="175">
             </td>
@@ -1374,6 +1492,8 @@
                 </p>
             </td>
         </tr>
+    </table>
+    <table border="0">
         <tr>
             <td width="175">
             </td>
@@ -1575,6 +1695,8 @@
                 </p>
             </td>
         </tr>
+    </table>
+    <table border="0">
         <tr>
             <td width="175">
             </td>
@@ -1632,6 +1754,8 @@
                 </p>
             </td>
         </tr>
+    </table>
+    <table border="0">
         <tr>
             <td width="175">
             </td>
@@ -1852,6 +1976,8 @@
                 </p>
             </td>
         </tr>
+    </table>
+    <table border="0">
         <tr>
             <td>
             </td>
