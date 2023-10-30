@@ -33,7 +33,10 @@ def convert_to_new_style(input_file, output_file):
     font_tags = soup.find_all("font")
     for font in font_tags:
         new_tag = soup.new_tag("p")
-        new_tag.string = font.string
+
+        # Check if the content is None before setting the string
+        if font.string is not None:
+            new_tag.string = font.string
 
         size = font.get("size")
         if size == "5":
