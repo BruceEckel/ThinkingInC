@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     margin-left: 150px;
     background-image: url('Backgnd.gif');
@@ -9,39 +10,50 @@ body {
     margin: 3em;
 }
 
+/* Titles and Headings */
+.title-main,
+.subtitle,
+h2.table-title,
+.chapter-header h2 {
+    font-weight: bold;
+}
+
 .title-main {
     font-size: 2.5em;
 }
 
-.subtitle {
-    font-size: 1.50em;
-    font-weight: bold;
-}
-
-.web-link,
-.note {
-    font-size: 1em;
-    font-weight: bold;
-}
-
+.subtitle,
 h2.table-title {
     font-size: 1.5em;
 }
 
+/* Links and Notes */
+.web-link,
+.note,
+.lecture-links .lecture-link {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Table of Contents */
 ul.table-of-contents {
     padding-left: 40px;
 }
 
 ul.table-of-contents li {
-    /* font-size: 1.0em; */
     font-weight: bold;
     margin-bottom: 0.5em;
     list-style-type: none;
 }
 
+/* Chapter Styles */
 .chapter-container {
     width: 500px;
     margin-left: 50px;
+}
+
+.chapter-duration {
+    font-size: 0.8em;
 }
 
 .hr-left {
@@ -50,21 +62,10 @@ ul.table-of-contents li {
     border: 0;
     height: 8px;
     background-color: gray;
+    margin-top: 30px;
 }
 
-.chapter-header h2 {
-    font-size: 1.5em;
-}
-
-.chapter-duration {
-    font-size: 0.8em;
-}
-
-.lecture-links .lecture-link {
-    font-size: 1em;
-    font-weight: bold;
-}
-
+/* Code Links */
 .code-link {
     font-size: 0.9em;
 }
@@ -80,13 +81,10 @@ ul.table-of-contents li {
     font-size: 0.9em;
 }
 
-.chapter-description p {
-    font-size: 1.0em;
-}
-
+/* Text Content */
+.chapter-description p,
 .license-description p {
     font-size: 1.0em;
-    display: block;
     margin-bottom: 1em;
 }
 
@@ -94,6 +92,7 @@ ul.table-of-contents li {
     max-width: 80ch;
 }
 
+/* Miscellaneous */
 .thin-hr {
-    height: 1px;
+    height: 2px;
 }
