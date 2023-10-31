@@ -1,0 +1,107 @@
+body {
+    margin-left: 150px;
+    background-image: url('Backgnd.gif');
+    background-color: #FFFFFF;
+    font-family: Verdana, Tahoma, Arial, Helvetica;
+}
+
+.content {
+    margin: 3em;
+}
+
+.title-main {
+    font-size: 2.5em;
+}
+
+.subtitle {
+    font-size: 1.50em;
+    font-weight: bold;
+}
+
+.web-link,
+.note {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+h2.table-title {
+    font-size: 1.5em;
+}
+
+ul.table-of-contents {
+    padding-left: 40px;
+}
+
+ul.table-of-contents li {
+    /* font-size: 1.0em; */
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    list-style-type: none;
+}
+
+.chapter-container {
+    width: 500px;
+    margin-left: 50px;
+}
+
+.hr-left {
+    align-self: flex-start;
+    width: 100%;
+    border: 0;
+    height: 8px;
+    background-color: gray;
+}
+
+.chapter-header h2 {
+    font-size: 1.5em;
+    font-family: Verdana, Tahoma, Arial, Helvetica;
+}
+
+.chapter-duration {
+    font-size: 0.8em;
+    font-family: Verdana, Tahoma, Arial, Helvetica;
+}
+
+.lecture-links .lecture-link {
+    font-size: 1em;
+    font-weight: bold;
+    font-family: Verdana, Tahoma, Arial, Helvetica;
+}
+
+.code-link {
+    font-size: 0.9em;
+    font-family: Verdana, Tahoma, Arial, Helvetica;
+}
+
+.code-links {
+    margin-top: -1em;
+    font-size: 0.8em;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.back-to-toc {
+    font-size: 0.9em;
+    font-family: Verdana, Tahoma, Arial, Helvetica;
+}
+
+.chapter-description p {
+    font-size: 1.0em;
+    font-family: Verdana, Tahoma, Arial, Helvetica;
+}
+
+.license-description p {
+    font-size: 1.0em;
+    font-family: Verdana, Tahoma, Arial, Helvetica;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.license-description {
+    max-width: 80ch;
+}
+
+
+.thin-hr {
+    height: 1px;
+}
