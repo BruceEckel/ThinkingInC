@@ -52,7 +52,6 @@ def generate_html_for_lecture(lecture_directory):
 
             # Navigation and audio at the bottom
             f.write("<footer>")
-            f.write('<a href="../../Index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;')
             if idx != 0:
                 f.write(
                     f'<a href="slide_{idx}.html">Previous</a>&nbsp;&nbsp;&nbsp;&nbsp;'
@@ -62,6 +61,7 @@ def generate_html_for_lecture(lecture_directory):
             f.write(
                 f'<audio controls autoplay><source src="{mp3.name}" type="audio/mpeg"></audio>'
             )
+            f.write('&nbsp;&nbsp;&nbsp;<a href="../../Index.html">Home</a>')
             f.write("</footer>")
 
             f.write(footer)
