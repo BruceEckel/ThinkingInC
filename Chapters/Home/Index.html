@@ -440,1103 +440,1041 @@
                 <a href="#TOC">Back to Table of Contents</a>
             </div>
         </div>
+    </div>
 
-        <table>
-            <tr>
-                <td width="175">
-                </td>
-                <td width="500">
-                    <hr align="left" noshade="NOSHADE" size="8" />
-                    <p>
-                        <a name="Chapter7">
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
-                            Chapter 7: Pointers 101
-                        </font>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                            <br />
-                            44 Minutes and 55
-                            Seconds
-                            <br />
-                        </font>
-                        <a href="lectures/Chap7.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="4">
-                                Start
-                                Lecture
-                            </font>
-                        </a>
-                        <br />
-                        <a href="#TOC">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                                Back to Table of
-                                Contents
-                            </font>
-                        </a>
-                    </p>
-                    <p>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            Pointers
-                            are essential for effective systems programming and for implementing complex
-                            objects in C++. But if you're going on to Java, you don't need all that
-                            machinery. However, you do need some basics because even Java uses pointers
-                            (but in a much more restricted way). This chapter gives a minimum coverage of
-                            pointers so that you can move on to Java: indirection, reference semantics, and
-                            using the heap (dynamic memory).
-                        </font>
-                    </p>
-                    <hr align="left" noshade="NOSHADE" size="1" />
-                    <p align="center">
-                        <a name="Chapter7Exercises">
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
-                            Chapter 7
-                            Exercises
-                        </font>
-                    </p>
-                    <p>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            In this
-                            exercise, you will modify the employee program to handle dynamic employee
-                            records. (A full description is given at the end of the Chapter 7
-                            lecture.)
-                        </font>
-                    </p>
-                    <p>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            Here are
-                            the source-code files for the exercises (use these as a starting point for
-                            solving the exercises):
-                        </font>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                            <br />
-                        </font>
-                        <a href="code/Chap7/echo.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                echo.c
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Chap7/employ2h.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                employ2.h
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Chap7/indirect.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                indirect.c
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Chap7/lab7.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                lab7.c
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Chap7/reverse2.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                reverse2.c
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Chap7/structarg.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                structarg.c
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Chap7/swap.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                swap.c
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="#SourceCode">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                Other options for source
-                                code
-                            </font>
-                        </a>
-                    </p>
-                    <p>
-                        <a href="lectures/Soln7.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="4">
-                                Start
-                                Lecture
-                            </font>
-                        </a>
-                    </p>
-                    <p>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            Here are
-                            the source-code files for the exercise solutions:
-                        </font>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                            <br />
-                        </font>
-                        <a href="code/Soln7/employ2.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                employ2.c
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Soln7/employ2h.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                employ2.h
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Soln7/lab7.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                lab7.c
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                    </p>
-                    <p>
-                        <a href="#TOC">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                                Back to Table of
-                                Contents
-                            </font>
-                        </a>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="175">
-                </td>
-                <td width="500">
-                    <hr align="left" noshade="NOSHADE" size="8" />
-                    <p>
-                        <a name="Chapter8a">
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
-                            Chapter 8a: A first look at
-                            Java
-                        </font>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                            <br />
-                            46
-                            Minutes and 27 Seconds
-                            <br />
-                        </font>
-                        <a href="lectures/Chap8a.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="4">
-                                Start
-                                Lecture
-                            </font>
-                        </a>
-                        <br />
-                        <a href="#TOC">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                                Back to Table of
-                                Contents
-                            </font>
-                        </a>
-                    </p>
-                    <p>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            You made
-                            it! If you're not interested in C++, this is your final stop. Here we look at
-                            how Java programs are written and built, and more importantly, how the Java
-                            Runtime Environment works. We also look at control flow and how to create
-                            objects and arrays.
-                        </font>
-                    </p>
-                    <hr align="left" noshade="NOSHADE" size="1" />
-                    <p align="center">
-                        <a name="Chapter8aExercises">
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
-                            Chapter 8a Exercises
-                        </font>
-                    </p>
-                    <p>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            In this
-                            exercise you will implement a simple Stack class (first seen in Chapter 7)
-                            using Java. (A full description is given at the end of the Chapter 8a
-                            lecture.)
-                        </font>
-                    </p>
-                    <p>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            Here are
-                            the source-code files for the exercises (use these as a starting point for
-                            solving the exercises):
-                        </font>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                            <br />
-                        </font>
-                        <a href="code/Chap8a/Array1.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                Array1.java
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Chap8a/Array2.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                Array2.java
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Chap8a/Array3.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                Array3.java
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Chap8a/Average.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                Average.java
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Chap8a/Employee.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                Employee.java
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Chap8a/Hello.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                Hello.java
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Chap8a/Label.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                Label.java
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Chap8a/Limits.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                Limits.java
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="#SourceCode">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                Other options for source
-                                code
-                            </font>
-                        </a>
-                    </p>
-                    <p>
-                        <a href="lectures/Soln8a.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="4">
-                                Start
-                                Lecture
-                            </font>
-                        </a>
-                    </p>
-                    <p>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            Here are
-                            the source-code files for the exercise solutions:
-                        </font>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                            <br />
-                        </font>
-                        <a href="code/Soln8a/Stack.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                Stack.java
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                    </p>
-                    <p>
-                        <a href="#TOC">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                                Back to Table of
-                                Contents
-                            </font>
-                        </a>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="175">
-                </td>
-                <td width="500">
-                    <hr align="left" noshade="NOSHADE" size="8" />
-                    <p>
-                        <a name="Chapter8b">
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
-                            Chapter 8b: Pointers 102
-                        </font>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                            <br />
-                            1 Hour, 19 Minutes and
-                            28 Seconds
-                            <br />
-                        </font>
-                        <a href="lectures/Chap8b.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="4">
-                                Start
-                                Lecture
-                            </font>
-                        </a>
-                        <br />
-                        <a href="#TOC">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                                Back to Table of
-                                Contents
-                            </font>
-                        </a>
-                    </p>
-                    <p>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            If
-                            you're planning to tackle C++, you're not done yet! First you have to become
-                            familiar with multiple levels of pointer indirection, pointer arithmetic,
-                            making objects read-only via
-                            <strong>
-                                const
-                            </strong>
-                            , generic pointers
-                            (
-                            <strong>
-                                void
-                            </strong>
-                            *), and the relationship pointers have with arrays and
-                            functions.
-                        </font>
-                    </p>
-                    <hr align="left" noshade="NOSHADE" size="1" />
-                    <p align="center">
-                        <a name="Chapter8bExercises">
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
-                            Chapter 8b Exercises
-                        </font>
-                    </p>
-                    <p align="LEFT">
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            In this exercise, you
-                            will:
-                        </font>
-                    </p>
-                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+    <div class="chapter-container">
+        <div class="chapter-header">
+            <hr class="hr-left" />
+            <h2 id="Chapter7">
+                Chapter 7: Pointers 101
+            </h2>
+            <p class="chapter-duration">44 Minutes and 55 Seconds</p>
+            <div class="lecture-links">
+                <a class="lecture-link" href="lectures/Chap7.htm">Start Lecture</a>
+            </div>
+            <a class="back-to-toc" href="#TOC">Back to Table of Contents</a>
+        </div>
+        <div class="chapter-description">
+            <p>
+                Pointers are essential for effective systems programming and for implementing complex
+                objects in C++. But if you're going on to Java, you don't need all that machinery. However, you do need
+                some basics because even Java uses pointers (but in a much more restricted way). This chapter gives a
+                minimum coverage of pointers so that you can move on to Java: indirection, reference semantics, and
+                using the heap (dynamic memory).
+            </p>
+        </div>
+        <hr class="hr-left thin-hr">
+        <div class="chapter-exercises">
+            <h3>Chapter 7 Exercises</h3>
+            <p>
+                In this exercise, you will modify the employee program to handle dynamic employee records.
+                (A full description is given at the end of the Chapter 7 lecture.)
+            </p>
+            <p>Here are the source-code files for the exercises (use these as a starting point for solving the
+                exercises):</p>
+            <div class="code-links">
+                <a class="code-link" href="code/Chap7/echo.htm">echo.c</a>
+                <a class="code-link" href="code/Chap7/employ2h.htm">employ2.h</a>
+                <a class="code-link" href="code/Chap7/indirect.htm">indirect.c</a>
+                <a class="code-link" href="code/Chap7/lab7.htm">lab7.c</a>
+                <a class="code-link" href="code/Chap7/reverse2.htm">reverse2.c</a>
+                <a class="code-link" href="code/Chap7/structarg.htm">structarg.c</a>
+                <a class="code-link" href="code/Chap7/swap.htm">swap.c</a>
+                <a class="code-link" href="#SourceCode">Other options for source code</a>
+            </div>
+            <div class="lecture-links">
+                <a class="lecture-link" href="lectures/Soln7.htm">Start Lecture</a>
+            </div>
+            <p>Here are the source-code files for the exercise solutions:</p>
+            <div class="code-links">
+                <a class="code-link" href="code/Soln7/employ2.htm">employ2.c</a>
+                <a class="code-link" href="code/Soln7/employ2h.htm">employ2.h</a>
+                <a class="code-link" href="code/Soln7/lab7.htm">lab7.c</a>
+            </div>
+            <div class="back-to-toc">
+                <a href="#TOC">Back to Table of Contents</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="chapter-container">
+        <div class="chapter-header">
+            <hr class="hr-left" />
+            <h2 id="Chapter8a">
+                Chapter 8a: A first look at Java
+            </h2>
+            <p class="chapter-duration">46 Minutes and 27 Seconds</p>
+            <div class="lecture-links">
+                <a class="lecture-link" href="lectures/Chap8a.htm">Start Lecture</a>
+            </div>
+            <a class="back-to-toc" href="#TOC">Back to Table of Contents</a>
+        </div>
+        <div class="chapter-description">
+            <p>
+                You made it! If you're not interested in C++, this is your final stop. Here we look at how Java programs
+                are written and built, and more importantly, how the Java Runtime Environment works. We also look at
+                control flow and how to create objects and arrays.
+            </p>
+        </div>
+        <hr class="hr-left thin-hr">
+        <div class="chapter-exercises">
+            <h3>Chapter 8a Exercises</h3>
+            <p>
+                In this exercise you will implement a simple Stack class (first seen in Chapter 7) using Java. (A full
+                description is given at the end of the Chapter 8a lecture.)
+            </p>
+            <p>Here are the source-code files for the exercises (use these as a starting point for solving the
+                exercises):</p>
+            <div class="code-links">
+                <a class="code-link" href="code/Chap8a/Array1.htm">Array1.java</a>
+                <a class="code-link" href="code/Chap8a/Array2.htm">Array2.java</a>
+                <a class="code-link" href="code/Chap8a/Array3.htm">Array3.java</a>
+                <a class="code-link" href="code/Chap8a/Average.htm">Average.java</a>
+                <a class="code-link" href="code/Chap8a/Employee.htm">Employee.java</a>
+                <a class="code-link" href="code/Chap8a/Hello.htm">Hello.java</a>
+                <a class="code-link" href="code/Chap8a/Label.htm">Label.java</a>
+                <a class="code-link" href="code/Chap8a/Limits.htm">Limits.java</a>
+                <a class="code-link" href="#SourceCode">Other options for source code</a>
+            </div>
+            <div class="lecture-links">
+                <a class="lecture-link" href="lectures/Soln8a.htm">Start Lecture</a>
+            </div>
+            <p>Here are the source-code files for the exercise solutions:</p>
+            <div class="code-links">
+                <a class="code-link" href="code/Soln8a/Stack.htm">Stack.java</a>
+            </div>
+            <div class="back-to-toc">
+                <a href="#TOC">Back to Table of Contents</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <table>
+        <tr>
+            <td width="175">
+            </td>
+            <td width="500">
+                <hr align="left" noshade="NOSHADE" size="8" />
+                <p>
+                    <a name="Chapter8a">
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
+                        Chapter 8a: A first look at
+                        Java
                     </font>
-                    <ol>
-                        <li>
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                                Write
-                                a function that inspects any object.
-                            </font>
-                        </li>
-                        <li>
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                                Totally hide the
-                                <b>
-                                    Employee
-                                </b>
-                                implementation in an incomplete type.
-                            </font>
-                        </li>
-                        <li>
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                                Define and use a pointer within a
-                                4-dimensional array (optional, but recommended!).
-                            </font>
-                        </li>
-                    </ol>
-                    <p>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            (A full
-                            description is given at the end of the Chapter 8b lecture.)
-                        </font>
-                    </p>
-                    <p>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            Here are
-                            the source-code files for the exercises (use these as a starting point for
-                            solving the exercises):
-                        </font>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                            <br />
-                        </font>
-                        <a href="code/Chap8b/bitwise2.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                bitwise2.c
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Chap8b/fptr.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                fptr.c
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Chap8b/fptr2.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                fptr2.c
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Chap8b/parith.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                parith.c
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Chap8b/parray.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                parray.c
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Chap8b/pptr.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                pptr.c
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Chap8b/qsort.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                qsort.c
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Chap8b/stack8b.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                stack8b.c
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Chap8b/stack8bh.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                stack8b.h
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Chap8b/ulimits.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                ulimits.c
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="#SourceCode">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                Other options for source
-                                code
-                            </font>
-                        </a>
-                    </p>
-                    <p>
-                        <a href="lectures/Soln8b.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="4">
-                                Start
-                                Lecture
-                            </font>
-                        </a>
-                    </p>
-                    <p>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            Here are
-                            the source-code files for the exercise solutions:
-                        </font>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                            <br />
-                        </font>
-                        <a href="code/Soln8b/employ2.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                employ2.c
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Soln8b/employ2h.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                employ2.h
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Soln8b/lab8-1.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                lab8-1.c
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Soln8b/lab8-2.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                lab8-2.c
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                        <a href="code/Soln8b/lab8-3.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                lab8-3.c
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                        </font>
-                    </p>
-                    <p>
-                        <a href="#TOC">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                                Back to Table of
-                                Contents
-                            </font>
-                        </a>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="175">
-                </td>
-                <td width="500">
-                    <hr align="left" noshade="NOSHADE" size="8" />
-                    <p>
-                        <a name="Chapter9b">
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
-                            Chapter 9b: A first look at
-                            C++
-                        </font>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                            <br />
-                            36
-                            Minutes and 29 Seconds
-                            <br />
-                        </font>
-                        <a href="lectures/Chap9b.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="4">
-                                Start
-                                Lecture
-                            </font>
-                        </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
                         <br />
-                        <a href="#TOC">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                                Back to Table of
-                                Contents
-                            </font>
-                        </a>
-                    </p>
-                    <p>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            Relax,
-                            it's all downhill from here (until you take your full-blown C++ class :-)! This
-                            chapter explains key differences between C and C++, and takes you through three
-                            essential C++ features:
+                        46
+                        Minutes and 27 Seconds
+                        <br />
+                    </font>
+                    <a href="lectures/Chap8a.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="4">
+                            Start
+                            Lecture
                         </font>
-                    </p>
-                    <ol>
-                        <li>
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                                Type
-                                safety
-                            </font>
-                        </li>
-                        <li>
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                                Classes
-                            </font>
-                        </li>
-                        <li>
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                                Templates
-                            </font>
-                        </li>
-                    </ol>
-                    <p>
+                    </a>
+                    <br />
+                    <a href="#TOC">
                         <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            Also
-                            covered are IOStreams and the
-                            <i>
-                                free store
-                            </i>
-                            operators
-                            <strong>
-                                new
-                            </strong>
-                            and
-                            <strong>
-                                delete
-                            </strong>
-                            .
+                            Back to Table of
+                            Contents
                         </font>
-                    </p>
-                    <hr align="left" noshade="NOSHADE" size="1" />
-                    <p align="center">
-                        <a name="Chapter9bExercises">
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
-                            Chapter 9b Exercises
+                    </a>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        You made
+                        it! If you're not interested in C++, this is your final stop. Here we look at
+                        how Java programs are written and built, and more importantly, how the Java
+                        Runtime Environment works. We also look at control flow and how to create
+                        objects and arrays.
+                    </font>
+                </p>
+                <hr align="left" noshade="NOSHADE" size="1" />
+                <p align="center">
+                    <a name="Chapter8aExercises">
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
+                        Chapter 8a Exercises
+                    </font>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        In this
+                        exercise you will implement a simple Stack class (first seen in Chapter 7)
+                        using Java. (A full description is given at the end of the Chapter 8a
+                        lecture.)
+                    </font>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        Here are
+                        the source-code files for the exercises (use these as a starting point for
+                        solving the exercises):
+                    </font>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                        <br />
+                    </font>
+                    <a href="code/Chap8a/Array1.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            Array1.java
                         </font>
-                    </p>
-                    <p>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap8a/Array2.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            Array2.java
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap8a/Array3.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            Array3.java
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap8a/Average.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            Average.java
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap8a/Employee.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            Employee.java
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap8a/Hello.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            Hello.java
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap8a/Label.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            Label.java
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap8a/Limits.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            Limits.java
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="#SourceCode">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            Other options for source
+                            code
+                        </font>
+                    </a>
+                </p>
+                <p>
+                    <a href="lectures/Soln8a.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="4">
+                            Start
+                            Lecture
+                        </font>
+                    </a>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        Here are
+                        the source-code files for the exercise solutions:
+                    </font>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                        <br />
+                    </font>
+                    <a href="code/Soln8a/Stack.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            Stack.java
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                </p>
+                <p>
+                    <a href="#TOC">
                         <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            In this
-                            exercise, you will implement a complete
+                            Back to Table of
+                            Contents
+                        </font>
+                    </a>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="175">
+            </td>
+            <td width="500">
+                <hr align="left" noshade="NOSHADE" size="8" />
+                <p>
+                    <a name="Chapter8b">
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
+                        Chapter 8b: Pointers 102
+                    </font>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                        <br />
+                        1 Hour, 19 Minutes and
+                        28 Seconds
+                        <br />
+                    </font>
+                    <a href="lectures/Chap8b.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="4">
+                            Start
+                            Lecture
+                        </font>
+                    </a>
+                    <br />
+                    <a href="#TOC">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                            Back to Table of
+                            Contents
+                        </font>
+                    </a>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        If
+                        you're planning to tackle C++, you're not done yet! First you have to become
+                        familiar with multiple levels of pointer indirection, pointer arithmetic,
+                        making objects read-only via
+                        <strong>
+                            const
+                        </strong>
+                        , generic pointers
+                        (
+                        <strong>
+                            void
+                        </strong>
+                        *), and the relationship pointers have with arrays and
+                        functions.
+                    </font>
+                </p>
+                <hr align="left" noshade="NOSHADE" size="1" />
+                <p align="center">
+                    <a name="Chapter8bExercises">
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
+                        Chapter 8b Exercises
+                    </font>
+                </p>
+                <p align="LEFT">
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        In this exercise, you
+                        will:
+                    </font>
+                </p>
+                <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                </font>
+                <ol>
+                    <li>
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                            Write
+                            a function that inspects any object.
+                        </font>
+                    </li>
+                    <li>
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                            Totally hide the
                             <b>
                                 Employee
                             </b>
-                            class. (A full
-                            description is given at the end of the Chapter 9b lecture.)
+                            implementation in an incomplete type.
                         </font>
-                    </p>
-                    <p>
+                    </li>
+                    <li>
                         <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            Here are
-                            the source-code files for the exercises (use these as a starting point for
-                            solving the exercises):
+                            Define and use a pointer within a
+                            4-dimensional array (optional, but recommended!).
                         </font>
+                    </li>
+                </ol>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        (A full
+                        description is given at the end of the Chapter 8b lecture.)
+                    </font>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        Here are
+                        the source-code files for the exercises (use these as a starting point for
+                        solving the exercises):
+                    </font>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                        <br />
+                    </font>
+                    <a href="code/Chap8b/bitwise2.htm">
                         <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                            <br />
+                            bitwise2.c
                         </font>
-                        <a href="code/Chap9b/hello.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                hello.cpp
-                            </font>
-                        </a>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap8b/fptr.htm">
                         <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            fptr.c
                         </font>
-                        <a href="code/Chap9b/intstack.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                intstack.cpp
-                            </font>
-                        </a>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap8b/fptr2.htm">
                         <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            fptr2.c
                         </font>
-                        <a href="code/Chap9b/intstackh.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                intstack.h
-                            </font>
-                        </a>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap8b/parith.htm">
                         <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            parith.c
                         </font>
-                        <a href="code/Chap9b/stack9bh.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                stack9b.h
-                            </font>
-                        </a>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap8b/parray.htm">
                         <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            parray.c
                         </font>
-                        <a href="code/Chap9b/tintstack.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                tintstack.cpp
-                            </font>
-                        </a>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap8b/pptr.htm">
                         <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            pptr.c
                         </font>
-                        <a href="code/Chap9b/tstack9b.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                tstack9b.cpp
-                            </font>
-                        </a>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap8b/qsort.htm">
                         <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            qsort.c
                         </font>
-                        <a href="#SourceCode">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                Other options for source
-                                code
-                            </font>
-                        </a>
-                    </p>
-                    <p>
-                        <a href="lectures/Soln9b.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="4">
-                                Start
-                                Lecture
-                            </font>
-                        </a>
-                    </p>
-                    <p>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap8b/stack8b.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            stack8b.c
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap8b/stack8bh.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            stack8b.h
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap8b/ulimits.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            ulimits.c
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="#SourceCode">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            Other options for source
+                            code
+                        </font>
+                    </a>
+                </p>
+                <p>
+                    <a href="lectures/Soln8b.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="4">
+                            Start
+                            Lecture
+                        </font>
+                    </a>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        Here are
+                        the source-code files for the exercise solutions:
+                    </font>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                        <br />
+                    </font>
+                    <a href="code/Soln8b/employ2.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            employ2.c
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Soln8b/employ2h.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            employ2.h
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Soln8b/lab8-1.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            lab8-1.c
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Soln8b/lab8-2.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            lab8-2.c
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Soln8b/lab8-3.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            lab8-3.c
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                </p>
+                <p>
+                    <a href="#TOC">
                         <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            Here are
-                            the source-code files for the exercise solutions:
+                            Back to Table of
+                            Contents
                         </font>
+                    </a>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="175">
+            </td>
+            <td width="500">
+                <hr align="left" noshade="NOSHADE" size="8" />
+                <p>
+                    <a name="Chapter9b">
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
+                        Chapter 9b: A first look at
+                        C++
+                    </font>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                        <br />
+                        36
+                        Minutes and 29 Seconds
+                        <br />
+                    </font>
+                    <a href="lectures/Chap9b.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="4">
+                            Start
+                            Lecture
+                        </font>
+                    </a>
+                    <br />
+                    <a href="#TOC">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                            Back to Table of
+                            Contents
+                        </font>
+                    </a>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        Relax,
+                        it's all downhill from here (until you take your full-blown C++ class :-)! This
+                        chapter explains key differences between C and C++, and takes you through three
+                        essential C++ features:
+                    </font>
+                </p>
+                <ol>
+                    <li>
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                            Type
+                            safety
+                        </font>
+                    </li>
+                    <li>
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                            Classes
+                        </font>
+                    </li>
+                    <li>
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                            Templates
+                        </font>
+                    </li>
+                </ol>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        Also
+                        covered are IOStreams and the
+                        <i>
+                            free store
+                        </i>
+                        operators
+                        <strong>
+                            new
+                        </strong>
+                        and
+                        <strong>
+                            delete
+                        </strong>
+                        .
+                    </font>
+                </p>
+                <hr align="left" noshade="NOSHADE" size="1" />
+                <p align="center">
+                    <a name="Chapter9bExercises">
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
+                        Chapter 9b Exercises
+                    </font>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        In this
+                        exercise, you will implement a complete
+                        <b>
+                            Employee
+                        </b>
+                        class. (A full
+                        description is given at the end of the Chapter 9b lecture.)
+                    </font>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        Here are
+                        the source-code files for the exercises (use these as a starting point for
+                        solving the exercises):
+                    </font>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                        <br />
+                    </font>
+                    <a href="code/Chap9b/hello.htm">
                         <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                            <br />
+                            hello.cpp
                         </font>
-                        <a href="code/Soln9b/employee.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                employee.cpp
-                            </font>
-                        </a>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap9b/intstack.htm">
                         <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            intstack.cpp
                         </font>
-                        <a href="code/Soln9b/employeeh.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                employee.h
-                            </font>
-                        </a>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap9b/intstackh.htm">
                         <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            intstack.h
                         </font>
-                        <a href="code/Soln9b/lab9.htm">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
-                                lab9.cpp
-                            </font>
-                        </a>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap9b/stack9bh.htm">
                         <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            stack9b.h
                         </font>
-                    </p>
-                    <p>
-                        <a href="#TOC">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                                Back to Table of
-                                Contents
-                            </font>
-                        </a>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="175">
-                </td>
-                <td width="500">
-                    <hr align="left" noshade="NOSHADE" size="8" />
-                    <p>
-                        <a name="MovingOn">
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
-                            Where to go next ...
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap9b/tintstack.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            tintstack.cpp
                         </font>
-                    </p>
-                    <p>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Chap9b/tstack9b.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            tstack9b.cpp
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="#SourceCode">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            Other options for source
+                            code
+                        </font>
+                    </a>
+                </p>
+                <p>
+                    <a href="lectures/Soln9b.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="4">
+                            Start
+                            Lecture
+                        </font>
+                    </a>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        Here are
+                        the source-code files for the exercise solutions:
+                    </font>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                        <br />
+                    </font>
+                    <a href="code/Soln9b/employee.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            employee.cpp
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Soln9b/employeeh.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            employee.h
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                    <a href="code/Soln9b/lab9.htm">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                            lab9.cpp
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="2">
+                    </font>
+                </p>
+                <p>
+                    <a href="#TOC">
                         <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            Now that
-                            you have enough of an understanding of C, you're ready to move on to your new
-                            language of choice: C++ or Java. MindView, Inc. has more resources available
-                            for you to learn these languages, including a variety of seminars, training CD
-                            Roms like this one, and both of Bruce Eckel's award-winning, freely
-                            downloadable books
-                            <em>
-                                <strong>
-                                    Thinking in C++
-                                </strong>
-                            </em>
-                            and
-                            <em>
-                                <strong>
-                                    Thinking in Java
-                                </strong>
-                            </em>
-                            (available on this CD, see
-                            <a href="#BookResources">
-                                here
-                            </a>
-                            ). Be sure to visit
+                            Back to Table of
+                            Contents
                         </font>
-                        <a href="http://www.MindView.net">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                                http://www.MindView.net
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            to download your copies of
-                            the books, and to learn about the other seminars and CDs!
-                        </font>
-                    </p>
-                    <p>
-                        <a href="#TOC">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                                Back to Table of
-                                Contents
-                            </font>
-                        </a>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td width="175">
-                </td>
-                <td width="500">
-                    <hr align="left" noshade="NOSHADE" size="8" />
-                    <p>
-                        <a name="SourceCode">
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
-                            Source Code
-                            <br />
-                        </font>
-                        <a href="#TOC">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                                Back to
-                                Table of Contents
-                            </font>
-                        </a>
-                    </p>
-                    <p>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            You have
-                            several options for accessing the source code for all the slides, exercises and
-                            solutions. The hyperlinks shown above for all the files in each chapter go to
-                            HTML files which can be cut and pasted directly from your browser into your
-                            editor or compiling environment. This is a bit tedious, but it
-                            works.
-                        </font>
-                    </p>
-                    <p>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            All the
-                            code files are also available in each chapter's subdirectory in this course.
-                            For each chapter, there's a subdirectory called "Code" which contains the
-                            source code files.
-                        </font>
-                    </p>
-                    <p>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            The most
-                            convenient form is a
-                        </font>
-                        <a href="code.zip">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                                ZIP file
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                            containing all the source code,
-                            which can be copied directly to your hard disk and unzipped; the unzipping
-                            process will create all the appropriate files and directories. If you don't
-                            have an "unzip" program on your machine,
-                        </font>
-                        <font face="Verdana,Tahoma,Arial,Helvetica">
-                            the best place to go for tools is
-                        </font>
-                        <a href="http://www.cdrom.com/pub/infozip/">
-                            <font face="Verdana,Tahoma,Arial,Helvetica">
-                                http://www.cdrom.com/pub/infozip/
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica">
-                            . This is a freeware, open-source
-                            implementation of zipping and unzipping programs that work on virtually all
-                            platforms. This course contains a version of INFO-ZIP for 16 &amp; 32 bit DOS
-                            and for the Macintosh, in the subdirectory Info-Zip. Here are the readme files
-                            for
-                        </font>
-                        <a href="Info-Zip/Dos/README.txt">
-                            <font face="Verdana,Tahoma,Arial,Helvetica">
-                                dos
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica">
-                            and the
-                        </font>
-                        <a href="Info-Zip/Mac/README.txt">
-                            <font face="Verdana,Tahoma,Arial,Helvetica">
-                                Macintosh
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica">
-                            .
-                        </font>
-                    </p>
-                    <p>
-                        <font face="Verdana,Tahoma,Arial,Helvetica">
-                            All questions
-                            about INFO-ZIP should be directed to the creators of that program; the INFO-ZIP
-                            material is only being included as a convenience and is not an official part of
-                            <em>
-                                Thinking in C
-                            </em>
-                            . Info-ZIP's software (Zip, UnZip and related
-                            utilities) is free, and can be obtained as source code or executables from
-                            Internet/WWW sites, including
-                        </font>
-                        <a href="http://www.cdrom.com/pub/infozip/">
-                            <font face="Verdana,Tahoma,Arial,Helvetica">
-                                http://www.cdrom.com/pub/infozip/
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica">
-                            ).
-                        </font>
-                    </p>
-                    <p>
-                        <font face="Verdana,Tahoma,Arial,Helvetica">
+                    </a>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="175">
+            </td>
+            <td width="500">
+                <hr align="left" noshade="NOSHADE" size="8" />
+                <p>
+                    <a name="MovingOn">
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
+                        Where to go next ...
+                    </font>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        Now that
+                        you have enough of an understanding of C, you're ready to move on to your new
+                        language of choice: C++ or Java. MindView, Inc. has more resources available
+                        for you to learn these languages, including a variety of seminars, training CD
+                        Roms like this one, and both of Bruce Eckel's award-winning, freely
+                        downloadable books
+                        <em>
                             <strong>
-                                Please
-                                note:
+                                Thinking in C++
                             </strong>
-                            when unzipping (using the above program) for Unix/Linux
-                            platforms, remember to use the
+                        </em>
+                        and
+                        <em>
                             <strong>
-                                -a
+                                Thinking in Java
                             </strong>
-                            flag, which will correct all
-                            the CR/LF issues during the unzipping process.
-                            <strong>
-                                The presentation slides
-                                and multimedia on this CD do
-                                <i>
-                                    NOT
-                                </i>
-                                work on Unix/Linux.
-                            </strong>
-                        </font>
-                    </p>
-                    <hr align="left" noshade="NOSHADE" size="8" />
-                    <p>
-                        <a name="BookResources">
+                        </em>
+                        (available on this CD, see
+                        <a href="#BookResources">
+                            here
                         </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
+                        ). Be sure to visit
+                    </font>
+                    <a href="http://www.MindView.net">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                            http://www.MindView.net
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        to download your copies of
+                        the books, and to learn about the other seminars and CDs!
+                    </font>
+                </p>
+                <p>
+                    <a href="#TOC">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                            Back to Table of
+                            Contents
+                        </font>
+                    </a>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="175">
+            </td>
+            <td width="500">
+                <hr align="left" noshade="NOSHADE" size="8" />
+                <p>
+                    <a name="SourceCode">
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
+                        Source Code
+                        <br />
+                    </font>
+                    <a href="#TOC">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                            Back to
+                            Table of Contents
+                        </font>
+                    </a>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        You have
+                        several options for accessing the source code for all the slides, exercises and
+                        solutions. The hyperlinks shown above for all the files in each chapter go to
+                        HTML files which can be cut and pasted directly from your browser into your
+                        editor or compiling environment. This is a bit tedious, but it
+                        works.
+                    </font>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        All the
+                        code files are also available in each chapter's subdirectory in this course.
+                        For each chapter, there's a subdirectory called "Code" which contains the
+                        source code files.
+                    </font>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        The most
+                        convenient form is a
+                    </font>
+                    <a href="code.zip">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                            ZIP file
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                        containing all the source code,
+                        which can be copied directly to your hard disk and unzipped; the unzipping
+                        process will create all the appropriate files and directories. If you don't
+                        have an "unzip" program on your machine,
+                    </font>
+                    <font face="Verdana,Tahoma,Arial,Helvetica">
+                        the best place to go for tools is
+                    </font>
+                    <a href="http://www.cdrom.com/pub/infozip/">
+                        <font face="Verdana,Tahoma,Arial,Helvetica">
+                            http://www.cdrom.com/pub/infozip/
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica">
+                        . This is a freeware, open-source
+                        implementation of zipping and unzipping programs that work on virtually all
+                        platforms. This course contains a version of INFO-ZIP for 16 &amp; 32 bit DOS
+                        and for the Macintosh, in the subdirectory Info-Zip. Here are the readme files
+                        for
+                    </font>
+                    <a href="Info-Zip/Dos/README.txt">
+                        <font face="Verdana,Tahoma,Arial,Helvetica">
+                            dos
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica">
+                        and the
+                    </font>
+                    <a href="Info-Zip/Mac/README.txt">
+                        <font face="Verdana,Tahoma,Arial,Helvetica">
+                            Macintosh
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica">
+                        .
+                    </font>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica">
+                        All questions
+                        about INFO-ZIP should be directed to the creators of that program; the INFO-ZIP
+                        material is only being included as a convenience and is not an official part of
+                        <em>
+                            Thinking in C
+                        </em>
+                        . Info-ZIP's software (Zip, UnZip and related
+                        utilities) is free, and can be obtained as source code or executables from
+                        Internet/WWW sites, including
+                    </font>
+                    <a href="http://www.cdrom.com/pub/infozip/">
+                        <font face="Verdana,Tahoma,Arial,Helvetica">
+                            http://www.cdrom.com/pub/infozip/
+                        </font>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica">
+                        ).
+                    </font>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica">
+                        <strong>
+                            Please
+                            note:
+                        </strong>
+                        when unzipping (using the above program) for Unix/Linux
+                        platforms, remember to use the
+                        <strong>
+                            -a
+                        </strong>
+                        flag, which will correct all
+                        the CR/LF issues during the unzipping process.
+                        <strong>
+                            The presentation slides
+                            and multimedia on this CD do
                             <i>
-                                Thinking in C++, 2nd edition
+                                NOT
                             </i>
-                            book resources
-                            <br />
-                        </font>
-                        <a href="#TOC">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                                Back to Table of
-                                Contents
-                            </font>
-                        </a>
-                    </p>
-                    <p>
-                        <font face="Verdana,Tahoma,Arial,Helvetica">
-                            This course also
-                            includes electronic versions of the book
-                            <i>
-                                Thinking in C++, 2nd edition,
-                                Volume 1
-                            </i>
-                            and source code for the book. Click
-                            <a href="CPPBook">
-                                here
-                            </a>
-                            to go to the directory containing the
-                            versions of the book.
-                        </font>
-                    </p>
+                            work on Unix/Linux.
+                        </strong>
+                    </font>
+                </p>
+                <hr align="left" noshade="NOSHADE" size="8" />
+                <p>
+                    <a name="BookResources">
+                    </a>
                     <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
                         <i>
-                            Thinking in Java
+                            Thinking in C++, 2nd edition
                         </i>
-                        book
+                        book resources
+                        <br />
                     </font>
-                    <p>
+                    <a href="#TOC">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                            Back to Table of
+                            Contents
+                        </font>
+                    </a>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica">
+                        This course also
+                        includes electronic versions of the book
+                        <i>
+                            Thinking in C++, 2nd edition,
+                            Volume 1
+                        </i>
+                        and source code for the book. Click
+                        <a href="CPPBook">
+                            here
+                        </a>
+                        to go to the directory containing the
+                        versions of the book.
+                    </font>
+                </p>
+                <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
+                    <i>
+                        Thinking in Java
+                    </i>
+                    book
+                </font>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica">
+                        This course also
+                        includes an electronic version of the book
+                        <i>
+                            Thinking in Java, 2nd edition
+                        </i>
+                        and source
+                        code for the book. Click
+                        <a href="JavaBook">
+                            here
+                        </a>
+                        to go to the directory containing the
+                        versions of the book.
+                    </font>
+                </p>
+                <hr align="left" noshade="NOSHADE" size="8" />
+                <p>
+                    <a name="Compilers">
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
+                        Compilers
+                        <br />
+                    </font>
+                    <a href="#TOC">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                            Back to
+                            Table of Contents
+                        </font>
+                    </a>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica">
+                        This course
+                        <strong>
+                            does not
+                        </strong>
+                        include any compilation tools for C, C++ or Java. It
+                        is your responsibility to acquire and install the tool of your choice.
+                    </font>
+                    <a href="Install.htm#HowDoICompile">
                         <font face="Verdana,Tahoma,Arial,Helvetica">
-                            This course also
-                            includes an electronic version of the book
-                            <i>
-                                Thinking in Java, 2nd edition
-                            </i>
-                            and source
-                            code for the book. Click
-                            <a href="JavaBook">
-                                here
-                            </a>
-                            to go to the directory containing the
-                            versions of the book.
+                            See here
                         </font>
-                    </p>
-                    <hr align="left" noshade="NOSHADE" size="8" />
-                    <p>
-                        <a name="Compilers">
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
-                            Compilers
-                            <br />
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica">
+                        for more details.
+                    </font>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td width="500">
+                <hr align="left" noshade="NOSHADE" size="8" />
+                <p>
+                    <a name="TechnicalSupport">
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
+                        Troubleshooting
+                        <br />
+                    </font>
+                    <a href="#TOC">
+                        <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
+                            Back to
+                            Table of Contents
                         </font>
-                        <a href="#TOC">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                                Back to
-                                Table of Contents
-                            </font>
-                        </a>
-                    </p>
-                    <p>
+                    </a>
+                </p>
+                <p>
+                    <font face="Verdana,Tahoma,Arial,Helvetica">
+                        If you have a
+                        problem you cannot resolve,
+                        <strong>
+                            please first
+                        </strong>
+                        look at the
+                    </font>
+                    <a href="Install.htm#Questions">
                         <font face="Verdana,Tahoma,Arial,Helvetica">
-                            This course
-                            <strong>
-                                does not
-                            </strong>
-                            include any compilation tools for C, C++ or Java. It
-                            is your responsibility to acquire and install the tool of your choice.
+                            FAQ
                         </font>
-                        <a href="Install.htm#HowDoICompile">
-                            <font face="Verdana,Tahoma,Arial,Helvetica">
-                                See here
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica">
-                            for more details.
-                        </font>
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td width="500">
-                    <hr align="left" noshade="NOSHADE" size="8" />
-                    <p>
-                        <a name="TechnicalSupport">
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica" size="5">
-                            Troubleshooting
-                            <br />
-                        </font>
-                        <a href="#TOC">
-                            <font face="Verdana,Tahoma,Arial,Helvetica" size="3">
-                                Back to
-                                Table of Contents
-                            </font>
-                        </a>
-                    </p>
-                    <p>
-                        <font face="Verdana,Tahoma,Arial,Helvetica">
-                            If you have a
-                            problem you cannot resolve,
-                            <strong>
-                                please first
-                            </strong>
-                            look at the
-                        </font>
-                        <a href="Install.htm#Questions">
-                            <font face="Verdana,Tahoma,Arial,Helvetica">
-                                FAQ
-                            </font>
-                        </a>
-                        <font face="Verdana,Tahoma,Arial,Helvetica">
-                            .
-                        </font>
-                    </p>
-                </td>
-            </tr>
-        </table>
+                    </a>
+                    <font face="Verdana,Tahoma,Arial,Helvetica">
+                        .
+                    </font>
+                </p>
+            </td>
+        </tr>
+    </table>
 </body>
 
 </html>
