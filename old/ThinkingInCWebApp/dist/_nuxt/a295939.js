@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{269:function(e,t,n){"use strict";n.r(t);var c=n(2).a.extend({}),l=n(27),component=Object(l.a)(c,(function(){var e=this,t=e.$createElement;return(e._self._c||t)("div",{staticClass:"flex items-center justify-center"},[e._v("Chapters")])}),[],!1,null,null,null);t.default=component.exports}}]);
