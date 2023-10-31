@@ -33,6 +33,7 @@ h2.table-title {
 .lecture-links .lecture-link {
     font-size: 1em;
     font-weight: bold;
+    width: 600px;
 }
 
 /* Table of Contents */
