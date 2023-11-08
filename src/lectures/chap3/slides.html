@@ -1,0 +1,53 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thinking in C</title>
+        <style>
+            /* Add your CSS styles here */
+        </style>
+    </head>
+    <body>
+        <img id="slideImage" alt="Slide" style="max-width: 100%; max-height: 80vh; margin: auto;">
+        <br/>
+        <button onclick="previousSlide()">Previous</button>
+        <button onclick="nextSlide()">Next</button>
+        <audio id="slideAudio" controls autoplay style="width: 600px; margin-left: 1em;"></audio>
+        <button onclick="goHome()">Home</button>
+        <script>
+            const slides = [{"svg": "Slide01.svg", "mp3": "Slide01.mp3"}, {"svg": "Slide02.svg", "mp3": "Slide02.mp3"}, {"svg": "Slide03.svg", "mp3": "Slide03.mp3"}, {"svg": "Slide04.svg", "mp3": "Slide04.mp3"}, {"svg": "Slide05.svg", "mp3": "Slide05.mp3"}, {"svg": "Slide06.svg", "mp3": "Slide06.mp3"}, {"svg": "Slide07.svg", "mp3": "Slide07.mp3"}, {"svg": "Slide08.svg", "mp3": "Slide08.mp3"}, {"svg": "Slide09.svg", "mp3": "Slide09.mp3"}, {"svg": "Slide10.svg", "mp3": "Slide10.mp3"}, {"svg": "Slide11.svg", "mp3": "Slide11.mp3"}, {"svg": "Slide12.svg", "mp3": "Slide12.mp3"}, {"svg": "Slide13.svg", "mp3": "Slide13.mp3"}, {"svg": "Slide14.svg", "mp3": "Slide14.mp3"}, {"svg": "Slide15.svg", "mp3": "Slide15.mp3"}];
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                const slide = slides[index];
+                document.getElementById('slideImage').src = slide.svg;
+                document.getElementById('slideAudio').src = slide.mp3;
+                currentSlide = index;
+                document.getElementById('slideAudio').play();
+            }
+
+            function nextSlide() {
+                if (currentSlide < slides.length - 1) {
+                    showSlide(currentSlide + 1);
+                }
+            }
+
+            function previousSlide() {
+                if (currentSlide > 0) {
+                    showSlide(currentSlide - 1);
+                }
+            }
+
+            function goHome() {
+                window.location.href = '../../Index.html';
+            }
+
+            document.getElementById('slideAudio').addEventListener('ended', nextSlide);
+
+            window.onload = () => showSlide(0);
+        </script>
+    </body>
+    </html>
+    
