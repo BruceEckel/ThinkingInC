@@ -12,9 +12,9 @@
     <body>
         <img id="slideImage" alt="Slide" style="max-width: 100%; max-height: 80vh; margin: auto;">
         <br/>
-        <button onclick="previousSlide()">Previous</button>
-        <button onclick="nextSlide()">Next</button>
-        <audio id="slideAudio" controls autoplay style="width: 600px; margin-left: 1em;"></audio>
+        <button id="previousButton" onclick="previousSlide()">Previous</button>
+        <button id="nextButton" onclick="nextSlide()">Next</button>
+        <audio id="slideAudio" controls style="width: 600px; margin-left: 1em;"></audio>
         <button onclick="goHome()">Home</button>
         <script>
             const slides = [{"svg": "Slide01.svg", "mp3": "Slide01.mp3"}, {"svg": "Slide02.svg", "mp3": "Slide02.mp3"}, {"svg": "Slide03.svg", "mp3": "Slide03.mp3"}, {"svg": "Slide04.svg", "mp3": "Slide04.mp3"}, {"svg": "Slide05.svg", "mp3": "Slide05.mp3"}, {"svg": "Slide06.svg", "mp3": "Slide06.mp3"}, {"svg": "Slide07.svg", "mp3": "Slide07.mp3"}, {"svg": "Slide08.svg", "mp3": "Slide08.mp3"}, {"svg": "Slide09.svg", "mp3": "Slide09.mp3"}, {"svg": "Slide10.svg", "mp3": "Slide10.mp3"}, {"svg": "Slide11.svg", "mp3": "Slide11.mp3"}, {"svg": "Slide12.svg", "mp3": "Slide12.mp3"}, {"svg": "Slide13.svg", "mp3": "Slide13.mp3"}, {"svg": "Slide14.svg", "mp3": "Slide14.mp3"}, {"svg": "Slide15.svg", "mp3": "Slide15.mp3"}, {"svg": "Slide16.svg", "mp3": "Slide16.mp3"}, {"svg": "Slide17.svg", "mp3": "Slide17.mp3"}, {"svg": "Slide18.svg", "mp3": "Slide18.mp3"}, {"svg": "Slide19.svg", "mp3": "Slide19.mp3"}, {"svg": "Slide20.svg", "mp3": "Slide20.mp3"}, {"svg": "Slide21.svg", "mp3": "Slide21.mp3"}];
@@ -26,6 +26,7 @@
                 document.getElementById('slideAudio').src = slide.mp3;
                 currentSlide = index;
                 document.getElementById('slideAudio').play();
+                updateNavigationButtons();
             }
 
             function nextSlide() {
@@ -40,13 +41,21 @@
                 }
             }
 
+            function updateNavigationButtons() {
+                document.getElementById('previousButton').style.display = currentSlide === 0 ? 'none' : 'inline';
+                document.getElementById('nextButton').style.display = currentSlide === slides.length - 1 ? 'none' : 'inline';
+            }
+
             function goHome() {
                 window.location.href = '../../Index.html';
             }
 
             document.getElementById('slideAudio').addEventListener('ended', nextSlide);
 
-            window.onload = () => showSlide(0);
+            window.onload = () => {
+                showSlide(0);
+                updateNavigationButtons();
+            };
         </script>
     </body>
     </html>

@@ -27,9 +27,9 @@ def generate_html_with_javascript(lecture_directory: Path) -> None:
     <body>
         <img id="slideImage" alt="Slide" style="max-width: 100%; max-height: 80vh; margin: auto;">
         <br/>
-        <button onclick="previousSlide()">Previous</button>
-        <button onclick="nextSlide()">Next</button>
-        <audio id="slideAudio" controls autoplay style="width: 600px; margin-left: 1em;"></audio>
+        <button id="previousButton" onclick="previousSlide()">Previous</button>
+        <button id="nextButton" onclick="nextSlide()">Next</button>
+        <audio id="slideAudio" controls style="width: 600px; margin-left: 1em;"></audio>
         <button onclick="goHome()">Home</button>
         <script>
             const slides = {slides_json};
@@ -41,6 +41,7 @@ def generate_html_with_javascript(lecture_directory: Path) -> None:
                 document.getElementById('slideAudio').src = slide.mp3;
                 currentSlide = index;
                 document.getElementById('slideAudio').play();
+                updateNavigationButtons();
             }}
 
             function nextSlide() {{
@@ -55,13 +56,21 @@ def generate_html_with_javascript(lecture_directory: Path) -> None:
                 }}
             }}
 
+            function updateNavigationButtons() {{
+                document.getElementById('previousButton').style.display = currentSlide === 0 ? 'none' : 'inline';
+                document.getElementById('nextButton').style.display = currentSlide === slides.length - 1 ? 'none' : 'inline';
+            }}
+
             function goHome() {{
                 window.location.href = '../../Index.html';
             }}
 
             document.getElementById('slideAudio').addEventListener('ended', nextSlide);
 
-            window.onload = () => showSlide(0);
+            window.onload = () => {{
+                showSlide(0);
+                updateNavigationButtons();
+            }};
         </script>
     </body>
     </html>
@@ -70,7 +79,9 @@ def generate_html_with_javascript(lecture_directory: Path) -> None:
     with open(lecture_directory / "slides.html", "w") as f:
         f.write(html_content)
 
-    print("Single HTML file with JavaScript created successfully!")
+    print(
+        f"Single HTML file with JavaScript created successfully for {lecture_directory.name}!"
+    )
 
 
 def generate_single_html(directory: str = ".") -> None:
