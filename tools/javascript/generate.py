@@ -1,3 +1,5 @@
+# generate.py
+# Generates "slides.html" for each lecture directory in "Thinking in C"
 from pathlib import Path
 import json
 
