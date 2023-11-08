@@ -1,9 +1,9 @@
 [project]
-name = "make-slides"
+name = "javascript"
 version = "0.1.0"
 description = "Add your description here"
 authors = [
-    { name = "Bruce Eckel", email = "mindviewinc@gmail.com" }
+    { name = "Bruce Eckel", email = "MindviewInc@gmail.com" }
 ]
 dependencies = []
 readme = "README.md"
