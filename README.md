@@ -1,5 +1,8 @@
 # Thinking In C
 
+A short seminar introducing the C language, consisting of slides and
+audio lectures. Also includes exercises and solutions.
+
 1. Download the most recent release [here](https://github.com/BruceEckel/ThinkingInC/releases).
 
 2. Unzip the release.
