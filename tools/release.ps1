@@ -8,19 +8,16 @@ if ($args.Count -lt 2) {
 }
 
 # Define the source directory and the name of the zip file
-$srcDirectory = "src"
+$srcDirectory = "..\src"
 $zipFileName = "ThinkingInC.zip"
 
 # Get the full path of the source directory
-$srcDirectoryPath = Join-Path -Path (Get-Location) -ChildPath $srcDirectory
+$srcDirectoryPath = Resolve-Path $srcDirectory
 
-# Get the parent directory of the source directory
-$parentDirectoryPath = Split-Path -Path $srcDirectoryPath -Parent
+# Get the full path of the target zip file in the main directory (one level up from tools)
+$targetZipFilePath = Join-Path -Path (Resolve-Path "..") -ChildPath $zipFileName
 
-# Get the full path of the target zip file in the parent directory
-$targetZipFilePath = Join-Path -Path $parentDirectoryPath -ChildPath $zipFileName
-
-# Compress the source directory files into a zip file in the parent directory
+# Compress the source directory files into a zip file in the main directory
 Compress-Archive -Path "$srcDirectoryPath\*" -DestinationPath $targetZipFilePath -Force
 
 # Get version number and release title from the command-line arguments
