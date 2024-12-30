@@ -16,9 +16,11 @@ Created and presented by Chuck Allison.
 ## Errors (Discovered by Ayush Pandey, to be fixed)
 
 1. CHAPTER 4
-slide #14 has audio of slide #15
-slide #15 has audio of slide #16
-slide #16 has audio of slide #14
+
+- slide #14 has audio of slide #15
+- slide #15 has audio of slide #16
+- slide #16 has audio of slide #14
 
 2. CHAPTER 6
-slide #30 has wrong audio
+
+- slide #30 has wrong audio
